@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+__pycache__/
+.venv/
+venv/
+dist/
+build/
+*.spec
+
+log.txt
+images/

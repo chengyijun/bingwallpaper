@@ -77,5 +77,9 @@ class BingWallPaper():
             os.mkdir(cls.IMGS_ROOT)
 
 
-if __name__ == "__main__":
+def main():
     BingWallPaper()
+
+
+if __name__ == "__main__":
+    main()
