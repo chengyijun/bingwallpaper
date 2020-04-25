@@ -27,14 +27,13 @@ def write_log(func):
     return inner
 
 
-class BingWallPaper():
+class BingWallPaper:
     URL = 'https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8&mkt=zh-CN'
     HEADERS = {
         'User-Agent':
-            'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36'
+        'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36'
     }
-    IMGS_ROOT = os.path.join(os.getcwd(),
-                             'images').replace('\\', '/')
+    IMGS_ROOT = os.path.join(os.getcwd(), 'images').replace('\\', '/')
 
     def __init__(self):
         res = requests.get(BingWallPaper.URL,
